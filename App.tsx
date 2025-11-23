@@ -197,10 +197,10 @@ const App: React.FC = () => {
       
       {/* Toast */}
       {toast && (
-        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 animate-fade-in-down w-full max-w-sm px-4">
-          <div className="bg-gray-900/90 dark:bg-white/90 backdrop-blur text-white dark:text-gray-900 px-6 py-3 rounded-2xl shadow-xl text-sm font-medium text-center flex items-center justify-center gap-2">
-            <span className="w-2 h-2 bg-green-400 dark:bg-green-600 rounded-full animate-pulse"></span>
-            {toast}
+        <div className="fixed inset-0 z-50 flex items-start justify-center pointer-events-none px-4 pt-10">
+          <div className="bg-gray-900/95 dark:bg-white/95 backdrop-blur text-white dark:text-gray-900 px-6 py-4 rounded-2xl shadow-2xl text-sm font-medium text-center flex items-center justify-center gap-3 animate-fade-in-down pointer-events-auto max-w-sm w-full border border-gray-800 dark:border-gray-200">
+            <span className="w-2.5 h-2.5 bg-green-400 dark:bg-green-500 rounded-full animate-pulse shrink-0"></span>
+            <span>{toast}</span>
           </div>
         </div>
       )}
